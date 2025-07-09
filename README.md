@@ -1,3 +1,19 @@
+# Olcee International Static Website
+
+This repository contains the source code for the Olcee International static website (olcee.com). The website is built with plain HTML, CSS, and JavaScript.
+
+## Project Overview
+
+The website serves as a company portal for Olcee International, showcasing their product lines (EcoServe® Tableware, Writeon® Pens, Flexifoil® Stretch Films, BubbleX® Bubble Wrap, ScrubbPro® Machines), company information, and a contact method.
+
+Key features include:
+- Responsive design for desktop, tablet, and mobile devices.
+- Multilingual support placeholders (EN, HI, AR) with RTL styling for Arabic.
+- SEO-friendly meta tags and Open Graph tags.
+- Accessibility considerations (WCAG 2.1 AA target).
+- A contact form designed to integrate with a backend service like Formspree.
+
+## File Structure
 
 ```
 /
