@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Olcee International</title>
+    <meta name="description" content="Get in touch with Olcee International. Send us a message or find our contact details.">
+    <meta name="theme-color" content="#4CAF50">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olcee.com/contact.html">
+    <meta property="og:title" content="Contact Olcee International">
+    <meta property="og:description" content="Get in touch with Olcee International. Send us a message or find our contact details.">
+    <meta property="og:image" content="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <meta property="og:image:alt" content="Customer service and communication concept with Olcee International.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://olcee.com/contact.html">
+    <meta property="twitter:title" content="Contact Olcee International">
+    <meta property="twitter:description" content="Get in touch with Olcee International. Send us a message or find our contact details.">
+    <meta property="twitter:image" content="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- To be created -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Olcee International</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="products/ecoserve.html">EcoServe® Tableware</a>
+                        <a href="products/writeon.html">Writeon® Pens</a>
+                        <a href="products/flexifoil.html">Flexifoil® Stretch Films</a>
+                        <a href="products/bubblex.html">BubbleX® Bubble Wrap</a>
+                        <a href="products/scrubbpro.html">ScrubbPro® Machines</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="language-selector">
+                <span>EN</span> | <a href="#" onclick="translateTo('hi')">HI</a> | <a href="#" onclick="translateTo('ar')">AR</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below or use the contact details provided.</p>
+
+            <div class="contact-details">
+                <p><strong>Address:</strong> 123 Industrial Area, City, Country</p>
+                <p><strong>Phone:</strong> +91 12345 67890</p>
+                <p><strong>Email:</strong> <a href="mailto:info@olcee.com">info@olcee.com</a></p>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+                <!-- Replace YOUR_FORM_ID_HERE with your actual Formspree form ID -->
+                <!-- Honeypot field for basic spam protection -->
+                <label class="honeypot" for="honeypot-field" aria-hidden="true">Do not fill this if you are human: <input type="text" name="honeypot-field" id="honeypot-field" tabindex="-1" autocomplete="off"></label>
+
+                <div>
+                    <label for="name">Name (Required)</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div>
+                    <label for="email">Email (Required)</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message (Required)</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <div id="form-status"></div> <!-- For success/error messages -->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Olcee International. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
